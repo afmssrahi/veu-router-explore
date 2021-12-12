@@ -2,8 +2,6 @@
 	<div>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
-				<router-link class="nav-link" to="/">RouterExplore</router-link>
-
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -17,16 +15,15 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item">
-							<router-link class="nav-link" to="/"
-								>Home</router-link
-							>
-						</li>
-						<li class="nav-item">
-							<router-link class="nav-link" to="/customer"
-								>Customer</router-link
-							>
-						</li>
+						<router-link tag="li" class="nav-item nav-link" to="/"
+							>Home</router-link
+						>
+						<router-link
+							tag="li"
+							class="nav-item nav-link"
+							to="/customer"
+							>Customer</router-link
+						>
 					</ul>
 				</div>
 			</div>

@@ -4,6 +4,8 @@
 		<p>This is customer page</p>
 
 		<button class="btn btn-dark" @click="navigateToHome">Go to home</button>
+		<hr />
+		<router-view></router-view>
 	</div>
 </template>
 
@@ -11,7 +13,7 @@
 export default {
 	methods: {
 		navigateToHome() {
-			this.$router.push('/');
+			this.$router.push({ name: 'home' });
 		},
 	},
 };
